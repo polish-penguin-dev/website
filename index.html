@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<style>
+
+body {
+ 	background-image: url("/puffin.jpg");
+        background-repeat:no-repeat;
+       background-size:cover;
+        
+}
+
+.object {
+  animation: MoveUpDown 1s linear infinite;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+@keyframes MoveUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-100px);
+  }
+}
+
+  .text {
+    font-family: arial;
+    color: #000000
+  }
+
+.linktext {
+    font-family: arial;
+    color: #0645AD
+  }
+
+.Button {
+  background-color: transparent;
+  border-color: #ffffff; 
+ border-width: 5px;  
+  border: 5px;
+  color: white;
+  padding: 8px 50px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+ border-style: solid;
+ font-family: Oswald;
+}
+
+@font-face {
+src: url(/Oswald.ttf);
+font-family: Oswald;
+ }
+
+ .text2 {
+   font-family: Oswald;
+   color: #ffffff;
+   font-size: 50px;
+   padding: 50px 50px;
+ }
+
+  .texth1 {
+   font-family: Oswald;
+   color: #ffffff;
+   text-align: center;
+ }
+
+  </style>
+<html>
+  <head>
+ <meta charset="utf-8" />
+ <title>PENGUIN</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="/favicon.ico">
+       <link rel="stylesheet" href="/style.css" />
+    
+    <header class="header">
+      
+<button class="Button" onclick="document.location='/'">HOME</button>  <button class="Button" onclick="myalert()">INFORMATION</button>
+
+
+      </header>
+<center class="text2">WELCOME TO PENGUIN PRODUCTIONS!</center>
+<center>
+<button class="Button" onclick="document.location='/info.html'">LEARN MORE. </button> 
+</center>
+
+      <footer class="footer">
+        </footer>
+        <div style="position: absolute; bottom: 5px; background-color: transparent">
+     <center>
+          <a href="https://www.istockphoto.com/en/photo/atlantic-puffin-in-latrabjarg-cliffs-iceland-gm841068602-137125643"
+            <p1 class="linktext">Image credit goes to istock.</p1>
+            </a>
+</center>
+    </div>
+        <script src="/script.js"></script>
+    </head>
+  </html>
